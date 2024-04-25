@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Scoreboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="home">
+            <h2 class="home-title">HOME</h2>
+            <div class="home-score-background">
+                <p id="score-home-el">0</p>
+            </div>
+            <div class="button-container">
+                <button class="btn" id="add1-el" onclick="add1Home()">+1</button>
+                <button class="btn" id="add2-el" onclick="add2Home()">+2</button>
+                <button class="btn" id="add3-el" onclick="add3Home()">+3</button>
+            </div>
+        </div>
+
+        <div class="guest">
+            <h2 class="guest-title">GUEST</h2>
+            <div class="guest-score-background">
+                <p id="score-guest-el">0</p>
+            </div>
+            <div class="button-container">
+                <button class="btn" id="add1-el" onclick="add1Guest()">+1</button>
+                <button class="btn" id="add2-el" onclick="add2Guest()">+2</button>
+                <button class="btn" id="add3-el" onclick="add3Guest()">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="reset-container">
+        <div id="reset-button">
+            <button class="btn" onclick="resetAll()">RESET</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
